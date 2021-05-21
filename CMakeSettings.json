@@ -10,7 +10,7 @@
         "buildRoot": "${workspaceRoot}\\build\\${name}",
         "installRoot": "${workspaceRoot}\\install\\${name}",
         "cmakeCommandArgs": "",
-        "buildCommandArgs": "-v",
+        "buildCommandArgs": "",
         "ctestCommandArgs": ""
     }
   ]
