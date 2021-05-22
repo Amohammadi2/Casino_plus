@@ -4,6 +4,8 @@
 cmake_minimum_required (VERSION 3.8)
 
 # Add source to this project's executable.
-add_executable (Casino_plus "Casino_plus.cpp" "Casino_plus.h")
+FILE(GLOB_RECURSE SrcFiles "*.cpp" "*.h")
+
+add_library (Casino_plus STATIC ${SrcFiles})
 
 # TODO: Add tests and install targets if needed.
