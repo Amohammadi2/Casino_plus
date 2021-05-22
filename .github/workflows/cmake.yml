@@ -36,7 +36,7 @@ jobs:
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
      # run: ctest -C ${{env.BUILD_TYPE}}
     - name: Make
-      run: cd .. && make
+      run: cd /home/runner/work/Casino_plus/Casino_plus/Casino_plus && make
     - name: Run
       run: ./Casino_plus
       
