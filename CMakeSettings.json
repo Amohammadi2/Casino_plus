@@ -1,9 +1,22 @@
 ﻿{
   "configurations": [
     {
-        "name": "x86-Debug",
+        "name": "x86-Debug VS2017",
         "generator": "Visual Studio 15 2017",
         "configurationType": "Debug",
+        "inheritEnvironments": [
+            "msvc_x86"
+        ],
+        "buildRoot": "${workspaceRoot}\\build\\${name}",
+        "installRoot": "${workspaceRoot}\\install\\${name}",
+        "cmakeCommandArgs": "",
+        "buildCommandArgs": "",
+        "ctestCommandArgs": ""
+    },
+    {
+        "name": "x86-Release VS2017",
+        "generator": "Visual Studio 15 2017",
+        "configurationType": "Release",
         "inheritEnvironments": [
             "msvc_x86"
         ],
