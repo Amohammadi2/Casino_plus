@@ -38,5 +38,5 @@ jobs:
     - name: Make
       run: cd /home/runner/work/Casino_plus/Casino_plus/Casino_plus && make
     - name: Run
-      run: ./Casino_plus
+      run: cd Casino_plus && ./Casino_plus
       
