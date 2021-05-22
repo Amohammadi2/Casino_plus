@@ -1,11 +1,12 @@
 // ببین که پسوند فایل انقدر هم مهم نیست
 
 #include <iostream>
+#include <string>
 
-int version = 10;
+#define VERSION "1.0"
 
 int main()
 {
-  std::cout << "version is " << ::version << std::endl;
+  std::cout << "version: " << VERSION << std::endl;
   return 0;
 }
