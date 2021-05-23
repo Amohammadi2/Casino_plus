@@ -7,5 +7,3 @@ cmake_minimum_required (VERSION 3.8)
 FILE(GLOB_RECURSE SrcFiles "*.cpp" "*.h")
 
 add_library (Casino_plus STATIC ${SrcFiles})
-
-# TODO: Add tests and install targets if needed.
