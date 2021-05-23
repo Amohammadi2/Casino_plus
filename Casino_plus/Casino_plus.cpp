@@ -20,6 +20,7 @@ Item_Type CasinoRandomGenerator<Item_Type>::GetRandomItem() {
 			return item.first;
 		}
 	}
+	return NULL;
 }
 
 template <class Item_Type>
