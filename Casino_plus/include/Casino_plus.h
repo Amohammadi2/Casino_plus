@@ -23,5 +23,3 @@ public:
 	void AddItem(const Item_Type& new_item, int probabilty_chance);
 	Item_Type GetRandomItem();
 };
-
-// TODO: Reference additional headers your program requires here.
