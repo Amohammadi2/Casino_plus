@@ -26,18 +26,3 @@ Item_Type CasinoRandomGenerator<Item_Type>::GetRandomItem() {
 template <class Item_Type>
 CasinoRandomGenerator<Item_Type>::CasinoRandomGenerator()
  : m_engine((unsigned int) time(0)) {}
-
-// test
-int main() {
-	CasinoRandomGenerator<std::string> name_rand;
-
-	name_rand.AddItem("Ashkan Mohammadi", 5);
-	name_rand.AddItem("Ilia Mohammadi", 2);
-	name_rand.AddItem("Arshia Mohammadi", 3);
-
-	for (int i = 0; i < 10; i++) {
-		std::cout << name_rand.GetRandomItem() << std::endl;
-	}
-
-	return 0;
-}
