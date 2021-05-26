@@ -32,7 +32,7 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration
-      run: cd Casino_plus && cmake .. # ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
+      run: ls && mkdir build && cd build && cmake .. # ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
    # - name: Test
     #  working-directory: ${{github.workspace}}/build
@@ -40,7 +40,7 @@ jobs:
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
      # run: ctest -C ${{env.BUILD_TYPE}}
     - name: Make
-      run: "cd /home/runner/work/Casino_plus/Casino_plus/Casino_plus && cmake --build ."
+      run: "cd build && cmake --build ."
     - name: Run
       run: cd Casino_plus && ls
       
