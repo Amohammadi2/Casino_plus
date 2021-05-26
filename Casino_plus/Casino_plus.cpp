@@ -1,7 +1,4 @@
-﻿// Casino_plus.cpp : Defines the entry point for the application.
-//
-
-#include "include/Casino_plus.h"
+﻿#include "include/Casino_plus.h"
 
 template <class Item_Type>
 void CasinoRandomGenerator<Item_Type>::AddItem

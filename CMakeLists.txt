@@ -7,5 +7,5 @@ project ("Casino_plus")
 
 # Include sub-projects.
 add_subdirectory ("Casino_plus")
-add_subdirectory ("Deps")
 add_subdirectory ("PyBinding")
+add_subdirectory ("Tests")
