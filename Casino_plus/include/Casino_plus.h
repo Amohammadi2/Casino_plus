@@ -19,6 +19,6 @@ private:
 public:
 	CasinoRandomGenerator();
 
-	void AddItem(const Item_Type& new_item, int probabilty_chance);
-	Item_Type GetRandomItem();
+	void add_item(const Item_Type& new_item, int probabilty_chance);
+	Item_Type get_random_item();
 };

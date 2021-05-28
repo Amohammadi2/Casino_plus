@@ -14,18 +14,18 @@ int func(int a, int distro_a, int b, int distro_b)
 {
 	CasinoRandomGenerator<int> rand;
 	
-	rand.AddItem(a, distro_a);
-	rand.AddItem(b, distro_b);
+	rand.add_item(a, distro_a);
+	rand.add_item(b, distro_b);
 
-	return rand.GetRandomItem();
+	return rand.get_random_item();
 }
 
 template<typename Type, typename Handle>
 void define_CRGClass(Handle handle, char* name) {
 	py::class_<CasinoRandomGenerator<Type>>(handle, name)
 		.def(py::init<>())
-		.def("add_item", &CasinoRandomGenerator<Type>::AddItem)
-		.def("get_random_item", &CasinoRandomGenerator<Type>::GetRandomItem); 
+		.def("add_item", &CasinoRandomGenerator<Type>::add_item)
+		.def("get_random_item", &CasinoRandomGenerator<Type>::get_random_item); 
 }
 
 PYBIND11_MODULE(CasinoPlus, handle) {

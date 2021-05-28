@@ -1,14 +1,14 @@
 ﻿#include "include/Casino_plus.h"
 
 template <class Item_Type>
-void CasinoRandomGenerator<Item_Type>::AddItem
+void CasinoRandomGenerator<Item_Type>::add_item
 (const Item_Type& new_item, int probabilty_chance) {
 	m_rand_items.push_back({ new_item, probabilty_chance });
 	m_total_probabilities += probabilty_chance;
 }
 
 template <class Item_Type>
-Item_Type CasinoRandomGenerator<Item_Type>::GetRandomItem() {
+Item_Type CasinoRandomGenerator<Item_Type>::get_random_item() {
 	std::uniform_int_distribution<int> distribution(1, m_total_probabilities);
 	int rand_num = distribution(m_engine);
 	for (const auto& item : m_rand_items) {
