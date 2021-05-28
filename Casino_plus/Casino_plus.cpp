@@ -23,3 +23,16 @@ Item_Type CasinoRandomGenerator<Item_Type>::GetRandomItem() {
 template <class Item_Type>
 CasinoRandomGenerator<Item_Type>::CasinoRandomGenerator()
  : m_engine((unsigned int) time(0)) {}
+
+
+#pragma region [CasinoRandomGenerator] template instantiation
+
+// instantiate basic types
+template class CasinoRandomGenerator<int>;
+template class CasinoRandomGenerator<float>;
+template class CasinoRandomGenerator<double>;
+template class CasinoRandomGenerator<char>;
+template class CasinoRandomGenerator<bool>;
+template class CasinoRandomGenerator<std::string>;
+
+#pragma endregion

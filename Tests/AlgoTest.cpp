@@ -4,5 +4,7 @@
 #include <gtest/gtest.h>
 
 TEST(Arithmatics, Addition) {
-	EXPECT_EQ(10 + 20, 30);
+	CasinoRandomGenerator<int> rand;
+
+	EXPECT_EQ(10, 10);
 }
