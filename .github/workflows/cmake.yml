@@ -43,4 +43,3 @@ jobs:
       run: "cd build && cmake --build ."
     - name: Run
       run: cd Casino_plus && ls
-      
