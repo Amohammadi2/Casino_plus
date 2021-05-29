@@ -44,4 +44,4 @@ jobs:
     - name: Run
       run: cd Casino_plus && ls
     - name: Test
-      run: tree .
+      run: cd build/Tests && ./AlgoTest
