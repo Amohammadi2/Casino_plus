@@ -9,6 +9,13 @@
 #include <ctime>
 #include <string>
 
+#ifdef PY_MODULE_IMPL
+#include <pybind11/pybind11.h>
+#include <pybind11/stl.h>
+
+namespace py = pybind11;
+#endif
+
 template <class Item_Type>
 class CasinoRandomGenerator {
 public:
@@ -16,9 +23,14 @@ public:
 	CasinoRandomGenerator();
 
 	void add_item(const Item_Type& new_item, int probabilty_chance);
-	template <class ... Items>
-	void add_items(Item_Type first, Items ... rest);
+	// Todo @critical: implement this function without variadic templates
+	//template <class ... Items>
+	//void add_items(Item_Type first, int second, Items ... rest);
 	Item_Type get_random_item();
+
+#ifdef PY_MODULE_IMPL
+	void add_sequence(py::args args);
+#endif
 
 #ifndef G_UNITTEST // expose private members when testing
 private:
