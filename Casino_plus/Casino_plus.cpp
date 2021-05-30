@@ -21,6 +21,13 @@ Item_Type CasinoRandomGenerator<Item_Type>::get_random_item() {
 }
 
 template <class Item_Type>
+template <class ... Items>
+void CasinoRandomGenerator<Item_Type>::add_items(Item_Type first, Items ...) {
+	m_rand_items.push_back(first);
+	add_items(...);
+}
+
+template <class Item_Type>
 CasinoRandomGenerator<Item_Type>::CasinoRandomGenerator()
  : m_engine((unsigned int) time(0)) {}
 
