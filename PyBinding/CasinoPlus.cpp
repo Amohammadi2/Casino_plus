@@ -24,7 +24,7 @@ int func(unsigned long int length , int a, int distro_a, int b, int distro_b)
 }
 // defineCRGClass = define Casino Rando Generator class
 template<typename Type, typename Handle>
-void define_CRGClass(Handle handle, char* name) {
+void define_CRGClass(Handle handle, const char* name) {
 	py::class_<CasinoRandomGenerator<Type>>(handle, name)
 		.def(py::init<>())
 		.def("add_item", &CasinoRandomGenerator<Type>::add_item)
