@@ -1,4 +1,5 @@
 #ifdef PY_MODULE_IMPL
+#include <iostream>
 
 // Todo: parse args
 template<class Item_Type>
