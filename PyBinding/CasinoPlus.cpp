@@ -11,18 +11,19 @@
 namespace py = pybind11;
 using str = std::string;
 
-// TODO: remove this test function and export all
+// Todo: remove this test function and export all
 //       instantiations of CasinoRandomGenerator
-int func(unsigned long int length , int a, int distro_a, int b, int distro_b)
+int func(unsigned long int length , int arr[][2])
 {
 	CasinoRandomGenerator<int> rand;
-	
-	rand.add_item(a, distro_a);
-	rand.add_item(b, distro_b);
+
+	for(int i=0; i < length; i++)
+		rand.add_item(arr[i][0] , arr[i][1]);
+
 
 	return rand.get_random_item();
 }
-// defineCRGClass = define Casino Rando Generator class
+
 template<typename Type, typename Handle>
 void define_CRGClass(Handle handle, const char* name) {
 	py::class_<CasinoRandomGenerator<Type>>(handle, name)
@@ -37,10 +38,11 @@ void define_CRGClass(Handle handle, const char* name) {
 PYBIND11_MODULE(CasinoPlus, handle) {
 	handle.doc() = "create uniform and non-uniform distribution";
 	handle.def("rand", &func);
-	
+
 	define_CRGClass<int>(handle, "i_CasinoRandomGenerator");
 	define_CRGClass<float>(handle, "f_CasinoRandomGenerator");
 	define_CRGClass<double>(handle, "d_CasinoRandomGenerator");
 	define_CRGClass<char>(handle, "cs_CasinoRandomGenerator");
 	define_CRGClass<str>(handle, "s_CasinoRandomGenerator");
+	//define_CRGClass<std::string>(handle, "s_");
 }
