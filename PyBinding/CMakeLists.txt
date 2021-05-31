@@ -27,4 +27,5 @@ pybind11_add_module(CasinoPlus
 
 target_include_directories(CasinoPlus
   PUBLIC "../Casino_plus/include"
+  PUBLIC "../Casino_plus/"
 )

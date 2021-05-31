@@ -3,6 +3,7 @@
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
 #include <Casino_plus.h>
+#include "../Casino_plus/Casino_plus_py.cpp"
 #include <iostream>
 #include <string>
 #include <cstring>
@@ -27,8 +28,11 @@ void define_CRGClass(Handle handle, char* name) {
 	py::class_<CasinoRandomGenerator<Type>>(handle, name)
 		.def(py::init<>())
 		.def("add_item", &CasinoRandomGenerator<Type>::add_item)
-		.def("get_random_item", &CasinoRandomGenerator<Type>::get_random_item); 
+		.def("add_sequence", &CasinoRandomGenerator<Type>::add_sequence)
+		.def("get_random_item", &CasinoRandomGenerator<Type>::get_random_item);
 }
+
+
 
 PYBIND11_MODULE(CasinoPlus, handle) {
 	handle.doc() = "create uniform and non-uniform distribution";

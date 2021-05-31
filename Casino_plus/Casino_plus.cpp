@@ -20,14 +20,6 @@ Item_Type CasinoRandomGenerator<Item_Type>::get_random_item() {
 	return 0;
 }
 
-#ifdef PY_MODULE_IMPL
-template<class Item_Type>
-void CasinoRandomGenerator<Item_Type>::add_sequence(py::args args) {
-	for (const auto item : args)
-		m_rand_items.push_back(item);
-}
-#endif
-
 // Todo @critical: implement this function without variadic templates
 //template <class Item_Type>
 //template <class ... Items>
