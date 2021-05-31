@@ -31,7 +31,7 @@ void define_CRGClass(Handle handle, char* name) {
 }
 
 PYBIND11_MODULE(CasinoPlus, handle) {
-	handle.doc() = "add docs";
+	handle.doc() = "create uniform and non-uniform distribution";
 	handle.def("rand", &func);
 	
 	define_CRGClass<int>(handle, "i_CasinoRandomGenerator");
