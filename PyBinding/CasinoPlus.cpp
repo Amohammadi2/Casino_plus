@@ -38,6 +38,6 @@ PYBIND11_MODULE(CasinoPlus, handle) {
 	define_CRGClass<float>(handle, "f_CasinoRandomGenerator");
 	define_CRGClass<double>(handle, "d_CasinoRandomGenerator");
 	define_CRGClass<char>(handle, "cs_CasinoRandomGenerator");
-	define_CRGClass<std::string>(handle, "s_CasinoRandomGenerator");
+	define_CRGClass<str>(handle, "s_CasinoRandomGenerator");
 	//define_CRGClass<std::string>(handle, "s_");
 }
