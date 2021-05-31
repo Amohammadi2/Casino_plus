@@ -11,7 +11,7 @@
 namespace py = pybind11;
 using str = std::string;
 
-// Todo: remove this test function and export all
+// TODO: remove this test function and export all
 //       instantiations of CasinoRandomGenerator
 int func(int a, int distro_a, int b, int distro_b)
 {
@@ -22,7 +22,7 @@ int func(int a, int distro_a, int b, int distro_b)
 
 	return rand.get_random_item();
 }
-
+// defineCRGClass = define Casino Rando Generator class
 template<typename Type, typename Handle>
 void define_CRGClass(Handle handle, char* name) {
 	py::class_<CasinoRandomGenerator<Type>>(handle, name)
