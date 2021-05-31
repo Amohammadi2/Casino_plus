@@ -13,7 +13,7 @@ using str = std::string;
 
 // Todo: remove this test function and export all
 //       instantiations of CasinoRandomGenerator
-int func(int a, int distro_a, int b, int distro_b)
+int func(unsigned long int length , int a, int distro_a, int b, int distro_b)
 {
 	CasinoRandomGenerator<int> rand;
 	
