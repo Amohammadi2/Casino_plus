@@ -31,7 +31,7 @@ void define_CRGClass(Handle handle, char* name) {
 }
 
 PYBIND11_MODULE(CasinoPlus, handle) {
-	handle.doc() = "Casino plus python binding wrapper";
+	handle.doc() = "add docs";
 	handle.def("rand", &func);
 	
 	define_CRGClass<int>(handle, "i_CasinoRandomGenerator");
