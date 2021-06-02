@@ -3,6 +3,9 @@
 
 #pragma once
 
+#ifndef A_STRANGE_NAME_THAT_THIS_FILE_HOLD_IT_AGURUYGDGEYUXEN_0X738697368
+#define A_STRANGE_NAME_THAT_THIS_FILE_HOLD_IT_AGURUYGDGEYUXEN_0X738697368
+
 #include <iostream>
 #include <vector>
 #include <random>
@@ -39,3 +42,4 @@ private:
 	std::default_random_engine m_engine;
 
 };
+#endif
