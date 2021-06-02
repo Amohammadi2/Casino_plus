@@ -24,12 +24,11 @@ public:
 
 	void add_item(const Item_Type& new_item, int probabilty_chance);
 	// Todo @critical: implement this function without variadic templates
-	//template <class ... Items>
-	//void add_items(Item_Type first, int second, Items ... rest);
+	void add_items(std::pair<Item_Type, int> items[], size_t len);
 	Item_Type get_random_item();
 
 #ifdef PY_MODULE_IMPL
-	void add_sequence(py::args args);
+	void add_sequence(std::vector<std::pair<Item_Type, int>> items);
 #endif
 
 #ifndef G_UNITTEST // expose private members when testing

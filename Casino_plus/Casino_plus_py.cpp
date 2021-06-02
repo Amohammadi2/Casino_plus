@@ -1,11 +1,13 @@
-#ifdef PY_MODULE_IMPL
+#include <utility>
+#include <vector>
+#include "include/Casino_plus.h"
 #include <iostream>
 
-// Todo: parse args
+#ifdef PY_MODULE_IMPL
 template<class Item_Type>
-void CasinoRandomGenerator<Item_Type>::add_sequence(py::args args) {
-	std::cout << "warning: this function is not implemented yet" << std::endl;
-	//for (const auto item : args)
-	//    process
+void CasinoRandomGenerator<Item_Type>::add_sequence(std::vector<std::pair<Item_Type, int>> items) {
+	for (const auto& item : items) {
+		add_item(item.first, item.second);
+	}
 }
 #endif

@@ -21,12 +21,11 @@ Item_Type CasinoRandomGenerator<Item_Type>::get_random_item() {
 }
 
 // Todo @critical: implement this function without variadic templates
-//template <class Item_Type>
-//template <class ... Items>
-//void CasinoRandomGenerator<Item_Type>::add_items(Item_Type first, int second, Items ... rest) {
-//	m_rand_items.push_back({first, second});
-//	add_items(rest...);
-//}
+template<class Item_Type>
+void CasinoRandomGenerator<Item_Type>::add_items(std::pair<Item_Type, int> items[], size_t len) {
+	for (register size_t i = 0; i < len; i++)
+		add_item(items[i].first, items[i].second);
+}
 
 template <class Item_Type>
 CasinoRandomGenerator<Item_Type>::CasinoRandomGenerator()
