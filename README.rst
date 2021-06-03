@@ -10,6 +10,7 @@ follow these instrucitons to setup the prjoect
 Linux
 ~~~~~~
 requirements:
+
 - CMake 3.8 or higher
 
 .. code:: bash
@@ -23,6 +24,7 @@ $ cmake --build
 Windows
 ~~~~~~~
 requirements:
+
 - Visual Studio 2017 or higher
 - CMake 3.8 or higher
 
