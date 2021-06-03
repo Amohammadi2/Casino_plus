@@ -13,7 +13,7 @@ requirements:
 
 - CMake 3.8 or higher
 
-.. code:: python
+.. code:: bash
 
    $ cd Casino_plus  # root dir
    $ mkdir build
@@ -43,7 +43,7 @@ requirements:
 - Visual C++ build tools 2017 or higher
 - CMake 3.8 or higher
 
-.. code:: python
+.. code:: bash
 
  $ python setup.py install
 
