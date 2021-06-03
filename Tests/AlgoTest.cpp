@@ -13,7 +13,6 @@ TEST(GeneratorTests, CanAddSingleItem) {
 	ASSERT_EQ(rand.m_rand_items[0].first, 10);
 }
 
-// Todo @critical : create test suits for sequential inseration
 TEST(GeneratorTests, CanAddSequentialItems) {
 	CasinoRandomGenerator<int> rand;
 	std::pair<int, int> vals[] = {

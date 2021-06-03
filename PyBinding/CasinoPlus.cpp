@@ -3,12 +3,12 @@
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
 #include <Casino_plus.h>
-#include "../Casino_plus/Casino_plus_py.cpp"
 #include <iostream>
 #include <string>
 #include <cstring>
 #include <vector>
 #include <utility>
+#include "../Casino_plus/Casino_plus_py.cpp"
 
 namespace py = pybind11;
 using str = std::string;
