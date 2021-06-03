@@ -14,11 +14,11 @@ requirements:
 - CMake 3.8 or higher
 
 .. code:: bash
-$ cd Casino_plus  # root dir
-$ mkdir build
-$ cd build
-$ cmake .
-$ cmake --build
+ $ cd Casino_plus  # root dir
+ $ mkdir build
+ $ cd build
+ $ cmake .
+ $ cmake --build
 
 
 Windows
