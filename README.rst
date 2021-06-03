@@ -95,4 +95,9 @@ Support
 --------
 by supporting this project, you help us grow and get better.
 
-<a href="https://coffeebede.ir/buycoffee/ashkan_mohammadi"><img class="img-fluid" src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg" /></a>
+.. image:: https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg
+
+`<img class="img-fluid" src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/defaultyellow.svg"/>`_
+
+"https://coffeebede.ir/buycoffee/ashkan_mohammadi"
+https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg
