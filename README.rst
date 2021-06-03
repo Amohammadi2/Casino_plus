@@ -10,7 +10,7 @@ follow these instrucitons to setup the prjoect
 Linux
 ~~~~~~
 requirements:
-* CMake 3.8 or higher
+- CMake 3.8 or higher
 
 .. code:: bash
 $ cd Casino_plus  # root dir
@@ -23,8 +23,8 @@ $ cmake --build
 Windows
 ~~~~~~~
 requirements:
-* Visual Studio 2017 or higher
-* CMake 3.8 or higher
+- Visual Studio 2017 or higher
+- CMake 3.8 or higher
 
 open up visual studio, select the configuration you want and build it
 or just give it a "CMake --build" after configuring the project manually
