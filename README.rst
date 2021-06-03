@@ -61,6 +61,7 @@ of constraints of C++ type system, there are some prefixes that you should
 prepend to the name of the class in order to import it.  
 
 here are the possible prefixes you can use:
+
 - s_ : for generators containing strings
 - cs_ : for generators containing characters
 - i_ : for generators containing integers
