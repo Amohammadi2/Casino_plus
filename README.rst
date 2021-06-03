@@ -13,7 +13,7 @@ requirements:
 
 - CMake 3.8 or higher
 
-.. code:: sh
+.. code::
    $ cd Casino_plus  # root dir
    $ mkdir build
    $ cd build
