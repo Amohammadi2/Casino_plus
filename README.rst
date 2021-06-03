@@ -12,13 +12,13 @@ Linux
 requirements:
 * CMake 3.8 or higher
 
-```bash
+.. code:: bash
 $ cd Casino_plus  # root dir
 $ mkdir build
 $ cd build
 $ cmake .
 $ cmake --build
-```
+
 
 Windows
 ~~~~~~~
@@ -39,9 +39,9 @@ requirements:
 * Visual C++ build tools 2017 or higher
 * CMake 3.8 or higher
 
-:code:```bash
+.. code:: bash
 $ python setup.py install
-```
+
 
 how to use python interface
 ----------------------------
@@ -49,7 +49,7 @@ This module is very developer-friendly and easy to use.
 first you should basically import the module after you have
 it installed.
 
-```python
+.. code:: python
 import CasinoPlus
 ```
 
@@ -64,7 +64,7 @@ here are the possible prefixes you can use:
 * f_ : for generators containing floating point values
 * d_ : for generators containing doubles
 
-example: `s_CasinoRandomGenerator` can contain strings as items
+example: :code:`s_CasinoRandomGenerator` can contain strings as items
 
 adding items to the generator
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
