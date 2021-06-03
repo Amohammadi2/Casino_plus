@@ -14,6 +14,7 @@ requirements:
 - CMake 3.8 or higher
 
 .. code:: python
+
    $ cd Casino_plus  # root dir
    $ mkdir build
    $ cd build
@@ -43,6 +44,7 @@ requirements:
 - CMake 3.8 or higher
 
 .. code:: python
+
  $ python setup.py install
 
 
@@ -53,6 +55,7 @@ first you should basically import the module after you have
 it installed.
 
 .. code:: python
+
  import CasinoPlus
 
 
@@ -88,6 +91,7 @@ getting a random value out of the generator
 to get a random value, you can use :code:`get_random_item` method
 
 .. code:: python
+
  rand_item = gen.get_random_item()
 
 
