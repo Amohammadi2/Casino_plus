@@ -1,11 +1,14 @@
-# Casino_plus
+Casino_plus
+==============
 easily create uniform and non-uniform random distributions
 
-## build instructions
+build instructions
+-----------------------
 follow these instrucitons to setup the prjoect
 
 
-### Linux
+Linux
+~~~~~~
 requirements:
 * CMake 3.8 or higher
 
@@ -17,7 +20,8 @@ $ cmake .
 $ cmake --build
 ```
 
-### Windows
+Windows
+~~~~~~~
 requirements:
 * Visual Studio 2017 or higher
 * CMake 3.8 or higher
@@ -25,19 +29,22 @@ requirements:
 open up visual studio, select the configuration you want and build it
 or just give it a "CMake --build" after configuring the project manually
 
-## how to use C++ interface
+how to use C++ interface
+-------------------------
 we're still working on this part to add proper docs
 
-## python binding installation
+python binding installation
+----------------------------
 requirements:
 * Visual C++ build tools 2017 or higher
 * CMake 3.8 or higher
 
-```bash
+:code:```bash
 $ python setup.py install
 ```
 
-## how to use python interface
+how to use python interface
+----------------------------
 This module is very developer-friendly and easy to use.
 first you should basically import the module after you have
 it installed.
@@ -59,7 +66,8 @@ here are the possible prefixes you can use:
 
 example: `s_CasinoRandomGenerator` can contain strings as items
 
-### adding items to the generator
+adding items to the generator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 in order to add new items to the generator you should use either
 `add_item` or `add_sequence`.
 
