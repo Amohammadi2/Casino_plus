@@ -13,7 +13,7 @@ requirements:
 
 - CMake 3.8 or higher
 
-.. code::
+.. code:: python
    $ cd Casino_plus  # root dir
    $ mkdir build
    $ cd build
@@ -42,8 +42,8 @@ requirements:
 - Visual C++ build tools 2017 or higher
 - CMake 3.8 or higher
 
-.. code:: bash
-$ python setup.py install
+.. code:: python
+ $ python setup.py install
 
 
 how to use python interface
@@ -73,24 +73,26 @@ example: :code:`s_CasinoRandomGenerator` can contain strings as items
 adding items to the generator
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 in order to add new items to the generator you should use either
-`add_item` or `add_sequence`.
+:code:`add_item` or :code:`add_sequence`.
 
-* `add_item (item, probability_chance: int) -> None` : adds one single 
+- :code:`add_item (item, probability_chance: int) -> None` : adds one single 
 item to the generator
-* `add_sequence (items: List[Tuple[Item_Type, int]]) -> None` : can add
-multiple items at once. `Item_Type` is actually the type of the generator
+* :code:`add_sequence (items: List[Tuple[Item_Type, int]]) -> None` : can add
+multiple items at once. :code:`Item_Type` is actually the type of the generator
 you're using. For example, if you are using "s_CasinoRandomGenerator" class,
-then `Item_Type` would be `str`. it is exactly the same case with other
+then :code:`Item_Type` would be :code:`str`. it is exactly the same case with other
 variations of CasinoRandomGenerator class
 
-### getting a random value out of the generator
-to get a random value, you can use `get_random_item` method
+getting a random value out of the generator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+to get a random value, you can use :code:`get_random_item` method
 
-```python
-rand_item = gen.get_random_item()
-```
+.. code:: python
+ rand_item = gen.get_random_item()
 
-## Support
+
+Support
+--------
 by supporting this project, you help us grow and get better.
 
 <a href="https://coffeebede.ir/buycoffee/ashkan_mohammadi"><img class="img-fluid" src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg" /></a>
