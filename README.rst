@@ -38,8 +38,9 @@ we're still working on this part to add proper docs
 python binding installation
 ----------------------------
 requirements:
-* Visual C++ build tools 2017 or higher
-* CMake 3.8 or higher
+
+- Visual C++ build tools 2017 or higher
+- CMake 3.8 or higher
 
 .. code:: bash
 $ python setup.py install
@@ -52,19 +53,19 @@ first you should basically import the module after you have
 it installed.
 
 .. code:: python
-import CasinoPlus
-```
+ import CasinoPlus
+
 
 the module contains a class called `CasinoRandomGenerator` but because
 of constraints of C++ type system, there are some prefixes that you should
 prepend to the name of the class in order to import it.  
 
 here are the possible prefixes you can use:
-* s_ : for generators containing strings
-* cs_ : for generators containing characters
-* i_ : for generators containing integers
-* f_ : for generators containing floating point values
-* d_ : for generators containing doubles
+- s_ : for generators containing strings
+- cs_ : for generators containing characters
+- i_ : for generators containing integers
+- f_ : for generators containing floating point values
+- d_ : for generators containing doubles
 
 example: :code:`s_CasinoRandomGenerator` can contain strings as items
 
