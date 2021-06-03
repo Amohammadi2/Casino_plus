@@ -95,7 +95,11 @@ Support
 --------
 by supporting this project, you help us grow and get better.
 
-.. image:: https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg
+`.. image:: https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg`_
+
+_::link: _.. image:: https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg
+
+`.. image:: https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg
 
 `<img class="img-fluid" src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/defaultyellow.svg"/>`_
 
