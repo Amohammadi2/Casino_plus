@@ -95,6 +95,9 @@ Support
 --------
 by supporting this project, you help us grow and get better.
 
+.. image:: https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg
+   :target: https://coffeebede.ir/buycoffee/ashkan_mohammadi
+
 `.. image:: https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg`_
 
 _::link: _.. image:: https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg
