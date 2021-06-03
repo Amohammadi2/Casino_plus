@@ -13,7 +13,7 @@
 #include <string>
 
 #ifdef PY_MODULE_IMPL
-// when compiling for python module, include this headers as well
+// when compiling for python module, include these headers as well
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
 

@@ -29,3 +29,5 @@ target_include_directories(CasinoPlus
   PUBLIC "../Casino_plus/include"
   PUBLIC "../Casino_plus/"
 )
+
+install(TARGETS CasinoPlus DESTINATION "${PYTHON_INSTALL_FOLDER}/site-packages/CasinoPlus")
