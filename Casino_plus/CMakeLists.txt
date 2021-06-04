@@ -7,6 +7,6 @@ cmake_minimum_required (VERSION 3.8)
 FILE(GLOB_RECURSE SrcFiles "*.cpp" "*.h")
 list(REMOVE_ITEM SrcFiles "Casino_plus_py.cpp")
 add_library (Casino_plus STATIC ${SrcFiles})
-target_include_directories(AlgoTest
+target_include_directories(Casino_plus
   PUBLIC "./include"
 )
