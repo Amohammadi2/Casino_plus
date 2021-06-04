@@ -73,7 +73,6 @@ here is an example program
    #include <string> // std::string
    #include <utility> // std::pair
    #include <Casino_plus.h> // CasinoRandomGenerator class
-
    int main() {
       // construct a new generator
       CasinoRandomGenerator<std::string> rand;
