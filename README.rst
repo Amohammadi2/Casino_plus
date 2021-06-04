@@ -18,8 +18,8 @@ requirements:
    $ cd Casino_plus  # root dir
    $ mkdir build
    $ cd build
-   $ cmake .
-   $ cmake --build
+   $ cmake ..
+   $ cmake --build .
 
 
 Windows
@@ -30,11 +30,66 @@ requirements:
 - CMake 3.8 or higher
 
 open up visual studio, select the configuration you want and build it
-or just give it a :code:`CMake --build` after configuring the project manually
+or just give it a :code:`cmake --build .` after configuring the project manually
 
 how to use C++ interface
 -------------------------
-we're still working on this part to add proper docs
+This project supports CMake. if you want to use this project in a CMake
+project, you can simply include it using FetchContent module from CMake.
+Note that this requires your CMAke version to be 3.12 or higher
+
+.. code:: cmake
+   include (FetchContent)
+   FetchContent_Declare(
+      cplus
+      GIT_REPOSITORY https://github.com/Amohammadi2/Casino_plus.git
+      GIT_TAG v1.0.1
+   )
+   if(NOT cplus_POPULATED)
+      FetchContent_Populate(cplus)
+      add_subdirectory(${cplus_SOURCE_DIR} ${cplus_BINARY_DIR})
+   endif()
+
+adding the codes above to your **CMakeLists.txt** file will download the repo
+as a dependency of your project. then you'll need to link the library against
+your project targets:
+
+.. code:: cmake
+   # just as an example
+   project (someproject)
+   add_executable(someexecutable "src/source.cpp")
+   target_link_libraries(someexecutable Casino_plus)
+
+adding the codes above, will make **Casino_plus.h** header file available 
+and links **Casino_plus** library to your executable.
+
+
+usage
+-----
+here is an example program
+
+.. code:: cpp
+   #include <iostream> // std::cout
+   #include <string> // std::string
+   #include <utility> // std::pair
+   #include <Casino_plus.h> // CasinoRandomGenerator class
+
+   int main() {
+      // construct a new generator
+      CasinoRandomGenerator<std::string> rand;
+      // add a single item
+      rand.add_item("Ashkan", 1)
+      std::pair<std::string, int> my_brothers[]  = {
+         {"Arshia", 1},
+         {"Ilia", 2}
+      };
+      // or add multiple items at once
+      rand.add_items(my_brothers);
+      // get a random value out of that
+      std::cout << /*returns std::string */ rand.get_random_item() << std::endl;
+      return 0;
+   }
+
 
 python binding installation
 ----------------------------
