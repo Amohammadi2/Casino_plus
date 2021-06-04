@@ -39,6 +39,7 @@ project, you can simply include it using FetchContent module from CMake.
 Note that this requires your CMAke version to be 3.12 or higher
 
 .. code:: cmake
+
    include (FetchContent)
    FetchContent_Declare(
       cplus
@@ -55,6 +56,7 @@ as a dependency of your project. then you'll need to link the library against
 your project targets:
 
 .. code:: cmake
+
    # just as an example
    project (someproject)
    add_executable(someexecutable "src/source.cpp")
@@ -69,6 +71,7 @@ usage
 here is an example program
 
 .. code:: cpp
+
    #include <iostream> // std::cout
    #include <string> // std::string
    #include <utility> // std::pair
